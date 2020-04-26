@@ -1,5 +1,5 @@
-# onematerialize
- One Page Theme - Materialize CSS inspired by Google Style Landing Page.
+# One Materialize
+One Page Theme - Materialize CSS inspired by Google Style Landing Page.
 
 One Materialize is - built from scratch - with Materilize CSS. It's very Lightweight, simple & elegant layout inspired by many Google Style Landing Page. One Materialize is the best free one-page style (Landing page) website template. If you are particularly looking for a web design that will easily distinguish you from the masses, One Materialize is the one. It rocks a stunning, lightweight - simple & elegant layout that will capture everyone’s interest in an instant. Of course, you can freely use One Materialize as is, but you can also enrich it with your original touch and make it stand out a mile.
 
