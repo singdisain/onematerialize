@@ -1,0 +1,74 @@
+description = "Default Layout"
+==
+<!DOCTYPE html>
+<html lang="{{ this.theme.site_locale }}">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="SingDisain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;lang=en">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+    {% styles %}
+
+</head>
+
+<body id="home" class="scrollspy">
+      
+<div class="loading-indicator-container">
+    <div class="loading-indicator">
+        <span></span>
+    </div>
+</div>
+    
+<!-- Section: Header -->
+<header>
+    {% partial 'header' %}
+</header>
+
+<!-- Page Layout -->
+<main>
+{% page %}
+</main>
+
+<!-- Footer -->
+<footer class="footer grey lighten-5 grey-text text-darken-2 center">
+    {% partial 'footer' %}
+</footer>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="{{ 'assets/js/main.js'| theme }}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

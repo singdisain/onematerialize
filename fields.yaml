@@ -1,0 +1,336 @@
+tabs:
+  fields:
+    site_logo:
+        tab: General
+        span: left
+        label: logo
+        comment: Please use image size (e.g. 50px x 50px) - *recomended max height (50px)
+        type: fileupload
+        mode: image
+        imageWidth: 50
+        imageHeight: 50
+        comment: Specify the image size to meet your desire logo size
+    site_title:
+        tab: General
+        span: right
+        label: Site Title
+        type: text
+        default: ne Materialize
+        comment: Used at site title
+    site_footer_section:
+        tab: General
+        label: Show the search icon & form
+        type: section
+    header_search:
+        tab: General
+        label: Show search form @top right header
+        type: switch
+        default: true
+        comment: Show or Hide the search form
+    site_footer_section:
+        tab: General
+        label: Site language
+        type: section
+    site_locale:
+        tab: General
+        label: Locale
+        type: text
+        default: en
+        comment: Used for HTML language parameter
+    site_footer_section:
+        tab: General
+        label: Footer Options
+        type: section
+    site_footer_section:
+        tab: General
+        label: Options for Footer sections
+        type: section
+    footer:
+        tab: General
+        span: left
+        label: Footer
+        type: text
+        default: "Your Website"
+    footer_social_menu:
+        tab: General
+        span: right
+        label: Show social icon @footer
+        type: switch
+        default: true
+        comment: Show or Hide the social icons
+    
+    slider_section_page:
+        tab: Images Slider
+        label: Enable or Disable this Section page
+        type: switch
+        default: true
+        comment: Show or Hide the slider page
+    slider_section:
+        tab: Images Slider
+        label: Image Slide-1
+        type: section
+    slider_photo1:
+        tab: Images Slider
+        span: left
+        label: Photo Slide-1
+        comment: Please use image size height 860px
+        type: fileupload
+        mode: image
+        imageWidth: 400
+        imageHeight: 200
+    slider_headline1:
+        tab: Images Slider
+        span: right
+        label: Headline 1
+        type: text
+        default: Email conversations with chat and video
+    slider_subheadline1:
+        tab: Images Slider
+        span: right
+        label: Caption
+        type: textarea
+        size: medium
+        default: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis
+    slider_section2:
+        tab: Images Slider
+        label: Image Slide-2
+        type: section
+    slider_photo2:
+        tab: Images Slider
+        span: left
+        label: Photo Slide-2
+        comment: Please use image size height 860px
+        type: fileupload
+        mode: image
+        imageWidth: 400
+        imageHeight: 200
+    slider_headline2:
+        tab: Images Slider
+        span: right
+        label: Headline 2
+        type: text
+        default: Work without interruption
+    slider_subheadline2:
+        tab: Images Slider
+        span: right
+        label: Caption
+        type: textarea
+        size: medium
+        default: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis
+    slider_section3:
+        tab: Images Slider
+        label: Image Slide-3
+        type: section
+    slider_photo3:
+        tab: Images Slider
+        span: left
+        label: Photo Slide-3
+        comment: Please use image size height 860px
+        type: fileupload
+        mode: image
+        imageWidth: 400
+        imageHeight: 200
+    slider_headline3:
+        tab: Images Slider
+        span: right
+        label: Headline 3
+        type: text
+        default: 99.9% guaranteed uptime, 0% planned downtime
+    slider_subheadline3:
+        tab: Images Slider
+        span: right
+        label: Caption
+        type: textarea
+        size: medium
+        default: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis
+    
+    about_section_page:
+        tab: About
+        label: Enable or Disable this Section page
+        type: switch
+        default: true
+        comment: Show or Hide the about page
+    about_photo_section:
+        tab: About
+        label: Photo
+        type: section
+    about_photo:
+        tab: About
+        comment: Please image size 16:10 aspect ratio (e.g. 1280 x 800)
+        type: fileupload
+        mode: image
+        imageWidth: 640
+        imageHeight: 360
+    about_photo_caption:
+        tab: About
+        label: Caption
+        type: textarea
+        size: medium
+        default: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    about_section:
+        tab: About
+        label: About
+        type: section
+    About_icon:
+        tab: About
+        label: Material Icons
+        type: text
+        default: email
+        comment: Used Material icons name (here's for the link https://materializecss.com/icons.html)
+    about_headline:
+        tab: About
+        label: Headline
+        type: text
+        default: Email Services
+    about_subheadline:
+        tab: About
+        label: Sub-Headline
+        type: text
+        default: Secure, private, ad-free email for your business
+    about_description:
+        tab: About
+        label: Descriptions
+        type: textarea
+        size: medium
+        default: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+    
+    services_section_page:
+        tab: Services
+        label: Enable or Disable this Section page
+        type: switch
+        default: true
+        comment: Show or Hide the services page
+    services_photo_section:
+        tab: Services
+        label: Photo
+        type: section
+    services_photo:
+        tab: Services
+        comment: Please image size 16:10 aspect ratio (e.g. 1280 x 800)
+        type: fileupload
+        mode: image
+        imageWidth: 640
+        imageHeight: 360
+    services_photo_caption:
+        tab: Services
+        label: Caption
+        type: textarea
+        size: medium
+        default: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    services_section:
+        tab: Services
+        label: Services
+        type: section
+    services_headline:
+        tab: Services
+        label: Headline
+        type: text
+        default: Get custom email @yourcompany
+    services_description:
+        tab: Services
+        label: Descriptions
+        type: textarea
+        size: medium
+        default: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+    
+    features_section_page:
+        tab: Features
+        label: Enable or Disable this Section page
+        type: switch
+        default: true
+        comment: Show or Hide the features page
+    features_photo_section:
+        tab: Features
+        label: Photo
+        type: section
+    features_photo:
+        tab: Features
+        comment: Please image size 16:10 aspect ratio (e.g. 1280 x 800)
+        type: fileupload
+        mode: image
+        imageWidth: 640
+        imageHeight: 360
+    features_photo_caption:
+        tab: Features
+        label: Caption
+        type: textarea
+        size: medium
+        default: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    features_section:
+        tab: Features
+        label: Features
+        type: section
+    features_headline:
+        tab: Features
+        label: Headline
+        type: text
+        default: Work without interruption
+    features_description:
+        tab: Features
+        label: Descriptions
+        type: textarea
+        size: medium
+        default: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+    
+    galery_section_page:
+        tab: Galery
+        label: Enable or Disable this Section page
+        type: switch
+        default: true
+        comment: Show or Hide the galery page
+
+    contact_section_page:
+        tab: Contact
+        label: Enable or Disable this Section page
+        type: switch
+        default: true
+        comment: Show or Hide the Contact page
+    contact_maps_section:
+        tab: Contact
+        label: Maps
+        type: section
+    contact_maps:
+        tab: Contact
+        label: Google Maps iframe src
+        comment: Please just copy the url (e.g. http://..... without iframe tag)
+        type: textarea
+        size: medium
+        default: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522
+    contact_section:
+        tab: Contact
+        label: Content
+        type: section
+    contact_headline1:
+        tab: Contact
+        label: Headline
+        type: text
+        default: Get in
+    contact_headline2:
+        tab: Contact
+        label: Headline
+        type: text
+        default: Touch
+    contact_addr_section:
+        tab: Contact
+        label: Address
+        type: section
+    contact_location:
+        tab: Contact
+        label: Location
+        type: text
+        default: One Materialize Building
+    contact_addr1:
+        tab: Contact
+        label: Address line 1
+        type: text
+        default: SingDisain Solution Road, Suite 01, Cinere
+    contact_addr2:
+        tab: Contact
+        label: Address line 2
+        type: text
+        default: South Jakarta, Indonesia 16512
+    contact_email:
+        tab: Contact
+        label: Email
+        type: email
+        default: contact@one.materialize

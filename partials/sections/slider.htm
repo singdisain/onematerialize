@@ -1,0 +1,32 @@
+description = "Section for Slider"
+==
+<!-- Section: Slider -->
+{% if this.theme.slider_section_page %}
+<section id="slider" class="slider">
+<div>
+    <ul class="slides">
+      <li>
+        <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash1.jpg'| theme }}">
+        <div class="caption center-align">
+          <h2>{{ this.theme.slider_headline1 | raw }}</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">{{ this.theme.slider_subheadline1 }}</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash2.jpg'| theme }}">
+        <div class="caption left-align">
+          <h2>{{ this.theme.slider_headline2 | raw }}</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">{{ this.theme.slider_subheadline2 }}</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash3.jpg'| theme }}">
+        <div class="caption right-align">
+          <h2>{{ this.theme.slider_headline3 | raw }}</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">{{ this.theme.slider_subheadline3 }}</h5>
+        </div>
+      </li>
+    </ul>
+</div>
+</section>
+{% endif %}

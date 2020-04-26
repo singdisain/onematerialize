@@ -1,0 +1,59 @@
+/* Default setup */
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+body {
+  cursor: auto;
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.444;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Blank space between container*/
+.blank-space {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Content layout to center align */
+.content-center {
+  margin-top: 100px;
+}
+
+/* Header & Navigation custom layout */
+.nav-wrapper .input-field input[type=search] {
+  height: auto;
+}
+
+nav .brand-logo {
+  margin-left: 20px;  
+}
+nav .brand-logo i.material-icons {
+  font-size: 50px;
+  margin-right: 0rem;
+}
+nav ul a {
+  font-size: 14px;
+}
+
+/* Slider Headline */
+.slider .slides li .caption {
+  top: 50%;
+}
+
+/* Custom footer layout */
+.footer {
+  margin: auto;
+}
+footer .row {
+  margin-bottom: 0px;
+}
+

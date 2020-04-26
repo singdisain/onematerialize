@@ -1,0 +1,78 @@
+==
+<!-- Navbar -->
+<div class="navbar-fixed">
+  <nav class="white">
+
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo grey-text text-darken-2"><i class="large material-icons blue-text">cloud_circle</i>ne
+        Materialize</a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger grey-text">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>{% if this.theme.slider_section_page %}
+          <a class="grey-text text-darken-2" href="#home">Home</a>
+          {% endif %}
+        </li>
+        <li>{% if this.theme.about_section_page %}
+          <a class="grey-text text-darken-2" href="#about">About</a>
+          {% endif %}
+        </li>
+        <li>{% if this.theme.services_section_page %}
+          <a class="grey-text text-darken-2" href="#services">Services</a>
+          {% endif %}
+        </li>
+        <li>{% if this.theme.features_section_page %}
+          <a class="grey-text text-darken-2" href="#features">Features</a>
+          {% endif %}
+        </li>
+        
+        <li>{% if this.theme.galery_section_page %}
+          <a class="grey-text text-darken-2" href="#gallery">Gallery</a>
+          {% endif %}
+        </li>
+        <li>{% if this.theme.contact_section_page %}
+          <a class="grey-text text-darken-2" href="#contact">Contact</a>
+          {% endif %}
+        </li>
+        <li>{% if this.theme.header_search %}
+          <form>
+            <div class="input-field blue white-text">
+              <input id="search" type="search" required>
+              <label class="label-icon " for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+<ul class="sidenav" id="mobile-nav">
+  <li>{% if this.theme.slider_section_page %}
+    <a href="#home"><i class="material-icons">home</i>Home</a>
+    {% endif %}
+  </li>
+  <li>{% if this.theme.about_section_page %}
+    <a href="#about"><i class="material-icons">info</i>About</a>
+    {% endif %}
+  </li>
+  <li>{% if this.theme.services_section_page %}
+    <a href="#services"><i class="material-icons">business_center</i>Services</a>
+    {% endif %}
+  </li>
+  <li>{% if this.theme.features_section_page %}
+    <a href="#features"><i class="material-icons">pageview</i>Features</a>
+    {% endif %}
+  </li>
+  <li>{% if this.theme.galery_section_page %}
+    <a href="#gallery"><i class="material-icons">photo</i>Gallery</a>
+    {% endif %}
+  </li>
+  <li>{% if this.theme.contact_section_page %}
+    <a href="#contact"><i class="material-icons">phone</i>Contact</a>
+    {% endif %}
+  </li>
+</ul>
