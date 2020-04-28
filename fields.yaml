@@ -67,45 +67,78 @@ tabs:
         comment: Show or Hide the slider page
     slider_section:
         tab: Images Slider
-        label: Image Slide-1
+        label: Slide-1
         type: section
+    slider_photo1:
+        tab: Images Slider
+        span: left
+        label: Photo Slide-1
+        comment: Please use image size height 860px
+        type: mediafinder
+        mode: image
+        imageWidth: 400
+        imageHeight: 200
     slider_headline1:
         tab: Images Slider
+        span: right
         label: Headline 1
         type: text
         default: Email conversations with chat and video
     slider_subheadline1:
         tab: Images Slider
+        span: right
         label: Caption
         type: textarea
         size: medium
         default: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis
     slider_section2:
         tab: Images Slider
-        label: Image Slide-2
+        label: Slide-2
         type: section
+    slider_photo2:
+        tab: Images Slider
+        span: left
+        label: Photo Slide-2
+        comment: Please use image size height 860px
+        type: mediafinder
+        mode: image
+        imageWidth: 400
+        imageHeight: 200
     slider_headline2:
         tab: Images Slider
+        span: right
         label: Headline 2
         type: text
         default: Work without interruption
     slider_subheadline2:
         tab: Images Slider
+        span: right
         label: Caption
         type: textarea
         size: medium
         default: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis
     slider_section3:
         tab: Images Slider
-        label: Image Slide-3
+        label: Slide-3
         type: section
+    slider_photo3:
+        tab: Images Slider
+        span: left
+        label: Photo Slide-3
+        comment: Please use image size height 860px
+        type: mediafinder
+        mode: image
+        imageWidth: 400
+        imageHeight: 200
     slider_headline3:
         tab: Images Slider
+        span: right
         label: Headline 3
         type: text
         default: 99.9% guaranteed uptime, 0% planned downtime
     slider_subheadline3:
         tab: Images Slider
+        span: right
         label: Caption
         type: textarea
         size: medium

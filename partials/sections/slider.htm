@@ -6,23 +6,37 @@ description = "Section for Slider"
 <div>
     <ul class="slides">
       <li>
-        <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash1.jpg'| theme }}">
+        {% if this.theme.slider_photo1 %}
+          <img class="responsive-img" src="{{ this.theme.slider_photo1|media }}">
+        {% else %}
+          <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash1.jpg'|theme }}">
+        {% endif %}
         <div class="caption center-align">
-          <h2>{{ this.theme.slider_headline1 | raw }}</h2>
+          <h2>{{ this.theme.slider_headline1|raw }}</h2>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">{{ this.theme.slider_subheadline1 }}</h5>
         </div>
       </li>
       <li>
-        <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash2.jpg'| theme }}">
+        {% if this.theme.slider_photo2 %}
+          <img class="responsive-img" src="{{ this.theme.slider_photo2|media }}">
+        {% else %}
+          <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash2.jpg'|theme }}">
+        {% endif %}
+
         <div class="caption left-align">
-          <h2>{{ this.theme.slider_headline2 | raw }}</h2>
+          <h2>{{ this.theme.slider_headline2|raw }}</h2>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">{{ this.theme.slider_subheadline2 }}</h5>
         </div>
       </li>
       <li>
-        <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash3.jpg'| theme }}">
+        {% if this.theme.slider_photo3 %}
+          <img class="responsive-img" src="{{ this.theme.slider_photo3|media }}">
+        {% else %}
+          <img class="responsive-img" src="{{ 'assets/images/bruce-mars-unsplash3.jpg'|theme }}">
+        {% endif %}
+
         <div class="caption right-align">
-          <h2>{{ this.theme.slider_headline3 | raw }}</h2>
+          <h2>{{ this.theme.slider_headline3|raw }}</h2>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">{{ this.theme.slider_subheadline3 }}</h5>
         </div>
       </li>

@@ -17,4 +17,4 @@ M.Slider.init(slider, {
     height: 860,
     transition: 500,
     interval: 6000
-});    
+});
