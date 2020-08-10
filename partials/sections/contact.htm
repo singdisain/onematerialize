@@ -2,7 +2,7 @@ description = "Section for Contact"
 ==
 <!-- Section: Contact -->
 {% if this.theme.contact_section_page %}
-<section id="contact" class="section section-contact scrollspy">
+<section id="contact" class="section section-contact grey lighten-5 scrollspy">
   <div class="container blank-space">
     <h4 class="center">
       <span class="grey-text">{{ this.theme.contact_headline1 | raw }}</span> {{ this.theme.contact_headline2 | raw }}
@@ -12,11 +12,12 @@ description = "Section for Contact"
       <div class="col s12 m6">
         <div class="card">
           <div class="card-content">
-          <!-- Google Map -->
-          <iframe src="{{ this.theme.contact_maps }}" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <!-- Google Map end -->
+            <!-- Google Map -->
+            <iframe src="{{ this.theme.contact_maps }}" width="100%" height="100%" frameborder="0" style="border:0"
+              allowfullscreen></iframe>
+            <!-- Google Map end -->
           </div>
-        
+
         </div>
         <ul class="collection with-header">
           <li class="collection-header">
@@ -32,19 +33,19 @@ description = "Section for Contact"
           <h5>Please fill out this form</h5>
           <div class="input-field">
             <input type="text" placeholder="Name">
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Email">
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Phone">
-            </div>
-            <div class="input-field">
-                <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
-            </div>
-            <input type="submit" value="Submit" class="btn blue">
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Phone">
+          </div>
+          <div class="input-field">
+            <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn blue">
+        </div>
       </div>
     </div>
-  </div>
 </section>
 {% endif %}

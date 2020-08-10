@@ -1,24 +1,29 @@
 description = "Section for Services"
+
+[viewBag]
 ==
 <!-- Section: Services -->
 {% if this.theme.services_section_page %}
 <section id="services" class="section section-services grey lighten-5 scrollspy">
   <div class="container blank-space">
     <div class="row">
-      <div class="col s12 m6 left-align content-center">
-        <h5>Get custom email @yourcompany</h5>
+      <div class="col s12 m6">
+        <h5>{{ this.theme.services_headline }}</h5>
         <p class="flow-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta
-          sint perferendis.
+          {{ this.theme.services_description }}
         </p>
       </div>
       <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
-            <img src="{{ 'assets/images/mail1.jpg'| theme }}" alt="">
+            {% if this.theme.services_photo %}
+            <img src="{{ this.theme.services_photo.getThumb(1280, 800, 'crop') }}" />
+            {% else %}
+            <img src="{{ 'assets/images/mail1.jpg'| theme }}">
+            {% endif %}
           </div>
           <div class="card-content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            {{ this.theme.services_photo_caption }}
           </div>
         </div>
       </div>

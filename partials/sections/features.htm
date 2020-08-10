@@ -9,19 +9,22 @@ description = "Section for Features"
       <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
+            {% if this.theme.features_photo %}
+            <img src="{{ this.theme.features_photo.getThumb(1280, 800, 'crop') }}" />
+            {% else %}
             <img src="{{ 'assets/images/bruce-mars-unsplash1.jpg'| theme }}">
+            {% endif %}
           </div>
           <div class="card-content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            {{ this.theme.features_photo_caption }}
           </div>
         </div>
       </div>
       <div class="col s12 m6 right-align">
 
-        <h5>Work without interruption</h5>
+        <h5>{{ this.theme.features_headline }}</h5>
         <p class="flow-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta
-          sint perferendis.
+          {{ this.theme.features_description }}
         </p>
       </div>
     </div>

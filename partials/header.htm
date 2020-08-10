@@ -1,10 +1,12 @@
+[viewBag]
 ==
 <!-- Navbar -->
 <div class="navbar-fixed">
   <nav class="white">
 
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo grey-text text-darken-2"><i class="large material-icons blue-text">cloud_circle</i>ne
+      <a href="#" class="brand-logo grey-text text-darken-2"><i
+          class="large material-icons blue-text">cloud_circle</i>ne
         Materialize</a>
       <a href="#" data-target="mobile-nav" class="sidenav-trigger grey-text">
         <i class="material-icons">menu</i>
@@ -26,7 +28,10 @@
           <a class="grey-text text-darken-2" href="#features">Features</a>
           {% endif %}
         </li>
-        
+        <li>{% if this.theme.products_section_page %}
+          <a class="grey-text text-darken-2" href="#products">Products</a>
+          {% endif %}
+        </li>
         <li>{% if this.theme.galery_section_page %}
           <a class="grey-text text-darken-2" href="#gallery">Gallery</a>
           {% endif %}

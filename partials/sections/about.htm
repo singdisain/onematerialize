@@ -9,20 +9,23 @@ description = "Section for About"
       <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
+            {% if this.theme.about_photo %}
+            <img src="{{ this.theme.about_photo.getThumb(1280, 800, 'crop') }}" />
+            {% else %}
             <img src="{{ 'assets/images/mail2.jpg'| theme }}">
+            {% endif %}
           </div>
           <div class="card-content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            {{ this.theme.about_photo_caption }}
           </div>
         </div>
       </div>
       <div class="col s12 m6 right-align">
-        <i class="material-icons large blue-text text-darken-2">email</i>
-        <h4>Email Services</h4>
-        <h6>Secure, private, ad-free email for your business</h6>
+        <i class="material-icons large blue-text text-darken-2">{{ this.theme.about_icon }}</i>
+        <h4>{{ this.theme.about_headline }}</h4>
+        <h6>{{ this.theme.about_subheadline }}</h6>
         <p class="flow-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta
-          sint perferendis.
+          {{ this.theme.about_description }}
         </p>
       </div>
     </div>

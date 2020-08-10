@@ -1,42 +1,52 @@
 ==
 <!-- Footer -->
-  <div class="row">
-    <div class="divider"></div>
-    <div class="col s12 m8 l6">
-      <p>{{ this.theme.footer }} | Copyright &copy;
-        <script>document.write(new Date().getFullYear());</script>
-      </p>
-      <p class="">All rights reserved | Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-          href="https://singdisain.com" target="_blank">Dodo Jaya Raditya</a>
-        <!-- Link back to Dodo Jaya Raditya can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
-    </div>
+<div class="row">
+  <div class="divider"></div>
+  <div class="col s12 m8 l6">
+    <p>{{ this.theme.footer }} | Copyright &copy;
+      <script>document.write(new Date().getFullYear());</script>
+    </p>
+    <p class="">All rights reserved | Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+        href="https://singdisain.com" target="_blank">Dodo Jaya Raditya</a>
+      <!-- Link back to Dodo Jaya Raditya can't be removed. Template is licensed under CC BY 3.0. -->
+    </p>
+  </div>
+
+  {% if this.theme.footer_social_menu %}
+  <div class="col s12 m8 l6">
+    <p>Follow us for additional news & tips</p>
 
     {% if this.theme.footer_social_menu %}
-    <div class="col s12 m8 l6">
-      <p>Follow us for additional news & tips</p>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-youtube fa-2x"></i>
-      </a>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-facebook fa-2x"></i>
-      </a>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-instagram fa-2x"></i>
-      </a>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-twitter fa-2x"></i>
-      </a>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-google-plus fa-2x"></i>
-      </a>
-      <a href="#" class="grey-text text-darken-2">
-        <i class="fab fa-pinterest fa-2x"></i>
-      </a>
-    </div>
+    <a href="{{ this.theme.footer_youtube_social_menu }}" class="grey-text text-darken-2">
+      <i class="fab fa-youtube fa-2x"></i>
+    </a>
     {% endif %}
-
+    {% if this.theme.footer_social_menu %}
+    <a href="{{ this.theme.footer_facebook_social_menu }}" class="grey-text text-darken-2">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+    {% endif %}
+    {% if this.theme.footer_social_menu %}
+    <a href="{{ this.theme.footer_instagram_social_menu }}" class="grey-text text-darken-2">
+      <i class="fab fa-instagram fa-2x"></i>
+    </a>
+    {% endif %}
+    {% if this.theme.footer_social_menu %}
+    <a href="{{ this.theme.footer_twitter_social_menu }}" class="grey-text text-darken-2">
+      <i class="fab fa-twitter fa-2x"></i>
+    </a>
+    {% endif %}
+    {% if this.theme.footer_social_menu %}
+    <a href="{{ this.theme.footer_linkedin_social_menu }}" class="grey-text text-darken-2">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    {% endif %}
+    {% if this.theme.footer_social_menu %}
+    <a href="{{ this.theme.footer_pinterest_social_menu }}" class="grey-text text-darken-2">
+      <i class="fab fa-pinterest fa-2x"></i>
+    </a>
+    {% endif %}
   </div>
+  {% endif %}
+
+</div>

@@ -1,5 +1,15 @@
 tabs:
   fields:
+    site_footer_section:
+        tab: General
+        label: Show the search icon & form
+        type: section
+    header_search:
+        tab: General
+        label: Show search form @top right header
+        type: switch
+        default: true
+        comment: Show or Hide the search form
     site_logo:
         tab: General
         span: left
@@ -19,45 +29,62 @@ tabs:
         comment: Used at site title
     site_footer_section:
         tab: General
-        label: Show the search icon & form
-        type: section
-    header_search:
-        tab: General
-        label: Show search form @top right header
-        type: switch
-        default: true
-        comment: Show or Hide the search form
-    site_footer_section:
-        tab: General
-        label: Site language
+        label: Site language & Footer
         type: section
     site_locale:
         tab: General
+        span: left
         label: Locale
         type: text
         default: en
         comment: Used for HTML language parameter
-    site_footer_section:
-        tab: General
-        label: Footer Options
-        type: section
-    site_footer_section:
-        tab: General
-        label: Options for Footer sections
-        type: section
     footer:
         tab: General
-        span: left
+        span: right
         label: Footer
         type: text
         default: "Your Website"
+    site_footer_social_section:
+        tab: General
+        label: Footer Options
+        type: section
     footer_social_menu:
         tab: General
-        span: right
+        span: left
         label: Show social icon @footer
         type: switch
         default: true
         comment: Show or Hide the social icons
+    footer_facebook_social_menu:
+        tab: General
+        label: Facebook
+        type: text
+        default: "#"
+    footer_instagram_social_menu:
+        tab: General
+        label: Instagram
+        type: text
+        default: "#"
+    footer_twitter_social_menu:
+        tab: General
+        label: Twitter
+        type: text
+        default: "#"
+    footer_Linkedin_social_menu:
+        tab: General
+        label: Linkedin
+        type: text
+        default: "#"
+    footer_pinterest_social_menu:
+        tab: General
+        label: Pinterest
+        type: text
+        default: "#"
+    footer_youtube_social_menu:
+        tab: General
+        label: Youtube
+        type: text
+        default: "#"
     
     slider_section_page:
         tab: Images Slider
@@ -171,7 +198,7 @@ tabs:
         tab: About
         label: About
         type: section
-    About_icon:
+    about_icon:
         tab: About
         label: Material Icons
         type: text
